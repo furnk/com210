@@ -1,0 +1,96 @@
+.date {
+float: left;
+width: 20%;
+clear: left;
+text-align: center;
+}
+
+.logo {
+float: left;
+margin-left: 2%;
+width: 20%;
+}
+
+.logo img {
+width: 100%;
+}
+
+.item {
+width: 56%;
+float: right;
+margin-left: 2%;
+}
+
+
+.entry {
+clear: both;
+display: inline-block; /* eliminates collapsing margins */
+margin-bottom: 10px;
+}
+
+h2 {
+clear:both;
+margin-bottom: 20px;
+}
+
+.skill {
+height: 50px;
+background-color:lightgrey;
+width: 100%;
+margin-bottom: 10px;
+}
+
+.html {
+width: 72%;
+margin: 0;
+background-color:lightblue;
+height: 40px;
+padding: 5px;
+}
+
+.css {
+width:65%;
+margin: 0;
+background-color:lightblue;
+height: 40px;
+padding: 5px;
+}
+
+.photoshop {
+width: 83%;
+margin: 0;
+background-color:lightblue;
+height: 40px;
+padding: 5px;
+}
+
+.social {
+width: 50px;
+}
+
+
+@media screen and (min-width:700px) {
+
+.contact {
+text-align: center;
+width: 28%;
+float: right;
+background-color:lightgreen;
+padding: 0% 1% 0% 1%;
+margin-left: 5%;
+margin-bottom: -5000px;
+padding-bottom: 5000px; 
+}
+
+.main {
+width: 65%;
+float: left;
+height: 100%;
+}
+
+.container {
+overflow: hidden;
+max-width: 960px;
+margin: auto;
+
+}
