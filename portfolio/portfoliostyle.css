@@ -3,30 +3,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.wrapper {
-    padding-left: 2%;
-}
-
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-}
-
-
-.topnav a {
-    display: block;
-    float: left;
-    color: #f2f2f2;
-    padding: 14px 16px;
-    font-size: 1rem;
-    text-align: center;
-    text-decoration: none;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-    
+.container {
+    padding: 2%;
+    max-width: 960px;
+    margin: auto;
 }
 
 .active {
@@ -34,8 +14,7 @@ body {
     color: white;
 }
 
-
-.item {
+.piece {
     width: 98%;
     margin: 1%;
 }
@@ -67,53 +46,76 @@ body {
     display: block;
 }
 
+#pagenav {
+  width: 100%;
+  background: #000;
+  /* If you want the navigation bar to stick on top
+  position: sticky;
+  top: 0;
+  */
+}
+
+#pagenav label, #hamburger {
+  display: none;
+}
+
+#pagenav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+#pagenav ul li {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+    color: #fff;
+}
+#pagenav ul li a {
+  color: inherit;
+  text-decoration: none;
+    padding: 11px 10px 11px 10px;
+}
+
+#pagenav ul li:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 @media screen and (min-width:525px) {
     
-    .item {
+    .piece {
         width: 30%;
         float: left;
     }
     
 }
-
+    
+    
 @media screen and (max-width:525px) {
     
-    .hamburger {
-        padding: 1px;
-    }
-
-    .bar {
-       width: 35px;
-        height: 2px;
-        background-color: white;
-        margin-top: 3px;   
+     #pagenav label {
+         display: inline-block;
+         color: #fff;
+         background: #a02620;
+         font-style: normal;
+         font-size: 1.2em;
+         padding: 10px;
     }
     
-    .topnav a:not(:first-child) {
+    #pagenav ul li {
+        display: block;
+    }
+  
+    #pagenav ul li {
+        border-top: 1px solid #333;
+    }
+    
+    #pagenav ul {
         display: none;
     }
     
-    .topnav a.icon {
-        float: right;
+    #pagenav input:checked ~ ul {
         display: block;
-    }
-    
-    .topnav.responsive {
-        position: relative;
-    }
-    
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    
+  }
     
 }
-
